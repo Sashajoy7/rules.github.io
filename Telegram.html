@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Введите код</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Введите код доступа</h2>
+    <input type="text" id="code" placeholder="Введите код">
+    <br>
+    <button onclick="checkCode()">Отправить</button>
+    <div id="error" class="error"></div>
+</div>
+
+<script>
+    function checkCode() {
+        const correctCode = "hdd";
+        const userCode = document.getElementById("code").value;
+
+        if (userCode === correctCode) {
+           window.open("https://t.me/+gDLVuH7jcTM0ZGZi", "_blank");
+        } else {
+            document.getElementById("error").textContent = "Неверный код!";
+        }
+    }
+</script>
+
+</body>
+</html>

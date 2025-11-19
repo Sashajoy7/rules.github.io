@@ -1,0 +1,15 @@
+#style1
+{
+	float: center; 
+	padding-top: 30px; 
+	margin-left: 60px;
+	margin-top: 60px;
+	width: 90%;
+	border-radius: 30px;
+	height: 70px;
+	text-decoration-color: #00ff00;
+	text-shadow: 3px 3px 8px white; 
+	background-color: <img src="images/images1.png" width="30">;
+	font-size: 30px;
+	color: #000080;
+}

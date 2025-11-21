@@ -1,0 +1,83 @@
+<html>
+<head>
+	<link rel="icon" href="images/home.png" type="image/png" size="32px 32px">
+</head>
+<style>
+.n-container {
+    display: inline-flex;
+    flex-direction: column; /* Элементы друг под другом */
+    
+    /* Эти свойства управляют выравниванием внутри контейнера */
+    justify-content: flex-start; /* Выравнивает содержимое к верху контейнера (если задана высота) */
+    align-items: flex-start; /* Выравнивает содержимое по левому краю */
+	
+    margin-left: 30%; /* Отступ от левого края страницы */
+    
+    /* Дополнительно: чтобы текст в <p> тоже выравнивался влево */
+    text-align: left; 
+}
+
+/* Стили для контейнера с выравниванием по левому краю (Telegram) */
+.left-container {
+    display: inline-flex;
+    flex-direction: column; /* Элементы друг под другом */
+    
+    /* Эти свойства управляют выравниванием внутри контейнера */
+    justify-content: flex-start; /* Выравнивает содержимое к верху контейнера (если задана высота) */
+    align-items: flex-start; /* Выравнивает содержимое по левому краю */
+	
+    margin-left: 0%; /* Отступ от левого края страницы */
+    
+    /* Дополнительно: чтобы текст в <p> тоже выравнивался влево */
+    text-align: left; 
+}
+/* Стили для центрированного контейнера (Discord) */
+.center-container {
+    display: inline-flex;
+    flex-direction: column; /* Элементы друг под другом */
+    justify-content: center; /* Центрирует группу по вертикали (если есть высота) */
+    align-items: center; /* Центрирует элементы внутри группы по горизонтали */
+	height: 20vh; /* Занимает всю высоту экрана для базового центрирования */
+    margin-top: -50px; /* Сдвигает весь блок вверх на 50 пикселей от середины */
+    margin-left: 10%;   /*margin-right: 0%; - эти строки не нужны, т.к. flex уже центрирует */
+}
+/* Дополнительный стиль, чтобы текст внутри параграфа <p> наследовал выравнивание */
+.left-container p {
+    align-self: center; /* Гарантирует, что сам параграф прижат к левому краю */
+    margin: 0; /* Убирает стандартные отступы у параграфа */
+}
+.center-container p {
+    align-self: center; /* Гарантирует, что сам параграф прижат к левому краю */
+    margin: 0; /* Убирает стандартные отступы у параграфа */
+}
+button {
+    /* Добавляем базовые стили для кнопок, чтобы они выглядели одинаково */
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+</style>
+
+<body>
+<div class="n-container">
+<a href="Menu.html" target="_self">
+    <img src="images/141987.png" width="120" alt="Меню">
+</a>
+
+</div>	
+<div class="left-container">
+    <a href="index Telegram.html" target="_slef">
+        <button><img src="images/1200x630bb.png" width="120" alt="Telegram Icon"></button>
+    </a>
+    <p style="font-weight: bold; font-size: 30">Telegram</p>
+</div>
+<div class="center-container">
+    <a href="index2 Discord.html" target="_slef">
+        <button><img src="images/51lpm9SpsJL.png" width="120" alt="Discord Icon"></button>
+    </a>
+    <p style="font-weight: bold; font-size: 30">Discord</p>
+</div>
+</body>
+</html>
